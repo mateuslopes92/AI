@@ -110,3 +110,19 @@ laptop.add_child(TreeNode("Thinkpad"))
 ## Binary Tree O(log n)
 Binary Tree is like a Tree but with a constraint that has at most 2 child nodes
 Left nodes are smaller values and right side are the bigger ones
+
+
+## Graph
+One example is friend suggestion on social media
+can be represented with an tuple or dictionary
+
+## Binary search O(log n)
+should use ordered array
+divide the array in 2 till find the required item
+
+## Bubble sort O(n2)
+compare 2 numbers and do the swap if is needed sending lower numbers to left,
+then keep going to right side repeting the process comparing 2 numbers
+
+## Quick sort
+use a pivot to do the sort, putting the pivot where left elements are lower and right are greater
