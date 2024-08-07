@@ -125,4 +125,12 @@ compare 2 numbers and do the swap if is needed sending lower numbers to left,
 then keep going to right side repeting the process comparing 2 numbers
 
 ## Quick sort
-use a pivot to do the sort, putting the pivot where left elements are lower and right are greater
+use a pivot(usual the most left element) to do the sort, putting the pivot where left elements are lower and right are greater
+this creates a left and right arrays and repeat the process with this arrays till all items are sorted
+uses partition
+
+## Insertion sort O(n2) or O(n) depending of best and worst case
+use a pointer to sort
+keep moving the pointer and insert the pointer to the right position on left side
+then keeps moving to right and repeat the process
+
