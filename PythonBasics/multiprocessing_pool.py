@@ -1,0 +1,14 @@
+from multiprocessing import Pool
+
+def f(n):
+  return n*n
+
+if __name__ == "__main__":
+  array = [1, 2, 3, 4, 5]
+
+  p = Pool() # you can pass how much processes want like Pool(processes=3)
+  result = p.map(f, array) # divide the work between the available cores in cpu
+  p.close()
+  p.join()
+
+  print(result)
