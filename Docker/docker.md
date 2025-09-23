@@ -19,5 +19,17 @@
 - Uses rest api to talk with docker engine
 - Containers are process and share kernel of the host
 
-## Docker Hub
--
+## Registry (Docker Hub)
+- Is like a github to git
+- All is written in the docker file
+- We can push image to docker hub in the registry then we can put on any machine to run like prod or test and have same image as dev
+
+## Development workflow
+### Real example
+
+Creating folder project and opening on vscode
+```
+mkdir hello-docker
+cd hello-docker
+code .
+```
