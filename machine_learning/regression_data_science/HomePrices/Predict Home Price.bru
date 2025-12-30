@@ -1,0 +1,22 @@
+meta {
+  name: Predict Home Price
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:5000/predict_home_price
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  total_sqft: 2000
+  location: 1st Phase JP Nagar
+  bhk: 4
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -10,7 +10,7 @@ def get_location_names():
   })
   response.headers.add('Access-Control-Allow-Origin', '*')
 
-  return "Hello, World!"
+  return response
 
 @app.route('/predict_home_price', methods=['POST'])
 def predict_home_price():
@@ -31,4 +31,5 @@ def predict_home_price():
 
 if __name__ == '__main__':
   print("Starting flask server for home price prediction...")
+  util.load_saved_artifacts()
   app.run()

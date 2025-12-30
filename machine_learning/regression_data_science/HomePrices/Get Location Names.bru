@@ -1,0 +1,23 @@
+meta {
+  name: Get Location Names
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://127.0.0.1:5000/get_location_names
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:multipart-form {
+  total_sqft: 2000
+  bath: 4
+  bhk: 4
+  location: 1st Phase JP Nagar
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
